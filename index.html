@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+{% block content %}
+<link rel="stylesheet" href="/home/gokul/Documents/myproject/Covid19-Detection-Using-Chest-X-Ray-master/covid-detector-flask/static/css/style.css">
+<title>COVID DETECT X</title>
+<style>
+    body {
+        background-color: #ff6666; /* Set a red background color */
+    }
+
+    .container {
+        max-width: 600px; /* Adjusted the maximum width for better readability */
+        margin: 50px auto; /* Center the container with some top margin */
+        padding: 30px;
+        background-color: #ffffff; /* Set a white background color */
+        border-radius: 10px; /* Add rounded corners to the container */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Increased the box shadow for a subtle effect */
+    }
+
+    .new-form {
+        text-align: center;
+    }
+
+    .new-h1, .new-h4 {
+        color: #3498db; /* Set a bright blue color for the headers */
+    }
+
+    .new-form-control-file {
+        background-color: #3498db; /* Set a blue color for the file input */
+        color: #ffffff; /* Set white text color for better contrast */
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        display: block;
+        margin: 0 auto; /* Center the file input */
+    }
+
+    #output-image {
+        max-width: 100%; /* Make sure the image doesn't exceed its container */
+        margin-top: 20px;
+        display: block;
+        margin: 0 auto; /* Center the image */
+    }
+
+    .new-btn {
+        background-color: #27ae60; /* Set a green color for the button */
+        color: #ffffff; /* Set white text color for better contrast */
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto; /* Center the button */
+    }
+</style>
+
+<div class="container">
+    <form class="new-form" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" class="new-form-control-file" id="inputfile" onchange="preview_image(event)">
+        <br />
+        <img id="output-image" class="new-rounded mx-auto d-block"/>
+        <button class="new-btn btn btn-lg btn-primary btn-block" id="submit-btn" type="submit">DETECT</button>
+    </form>
+</div>
+
+<script type="text/javascript">
+    function preview_image(event) {
+        var reader = new FileReader();
+        reader.onload = function(){
+            var output = document.getElementById('output-image')
+            output.src = reader.result;
+            var button = document.getElementById('submit-btn')
+            button.textContent = "DETECT"
+        }
+        reader.readAsDataURL(event.target.files[0]);
+    }
+</script>
+{% endblock %}

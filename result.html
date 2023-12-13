@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block content %}
+    <style>
+        body {
+            background-color: #ecf0f1; /* Set a light background color */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .result-form {
+            background-color: #cf5e5e; /* Set a blue color for the result form */
+            color: #ffffff; /* Set white text color for better contrast */
+            padding: 20px;
+            border-radius: 10px; /* Add rounded corners to the result form */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+        }
+
+        .result-h4 {
+            color: #ffffff; /* Set a red color for the result text */
+        }
+
+        .result-btn {
+            background-color: #2ecc71; /* Set a green color for the "GO BACK" button */
+            color: #ffffff; /* Set white text color for better contrast */
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
+
+    <div class="container">
+        <div class="result-form">
+            {% if name == "normal" %}
+                <h4 class="result-h4 mb-3 font-weight-normal"> SCAN RESULT: Normal </h4>
+            {% else %}
+                <h4 class="result-h4 mb-3 font-weight-normal"> SCAN RESULT: COVID Positive</h4>
+            {% endif %}
+            <a href="{{ url_for('upload_file')}}" class="result-btn btn btn-lg btn-primary btn-block"> PREVIOUS</a>
+        </div>
+    </div>
+{% endblock %}
