@@ -130,6 +130,7 @@ Pillow
 ```
 
 ## Demo
+![image](https://github.com/Gokulachalam/Covid_Detect_X/assets/89055461/0217771b-7e58-4b2d-ae7b-8e89d91c80bc)
 
 
 
