@@ -116,10 +116,20 @@ NumPy
 
 Pillow
 
+## Run Scripy
+
+```bash
+    python3 app.py
+```
+
 
 ## Install requirements using this command
 
 ```bash
      pip install - requirements.txt
+```
 
-     ```
+## Demo
+
+
+
