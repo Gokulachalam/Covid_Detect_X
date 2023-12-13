@@ -131,7 +131,7 @@ Pillow
 
 ## Demo
 
-!demo[Screencast from 2023-12-13 21-42-23](https://github.com/Gokulachalam/Covid_Detect_X/assets/89055461/f9579cce-a347-4127-919c-a7a5ff211548)
+![Screencast from 2023-12-13 21-42-23](https://github.com/Gokulachalam/Covid_Detect_X/assets/89055461/f9579cce-a347-4127-919c-a7a5ff211548)
 
 
 
