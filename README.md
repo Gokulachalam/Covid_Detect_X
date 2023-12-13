@@ -1,21 +1,16 @@
 # Covid_Detect_X
 
+## Demo
+
+![Screencast from 2023-12-13 21-42-23](https://github.com/Gokulachalam/Covid_Detect_X/assets/89055461/f9579cce-a347-4127-919c-a7a5ff211548)
+
+
+
 
 ## Overview
 
 This project is a web application for classifying X-ray images into two categories: 'covid19' and 'normal'. It uses a deep learning model implemented with PyTorch and a Flask web framework to provide a user-friendly interface for image classification.
 
-## Table of Contents
-
-- [Features](#features)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Model Details](#model-details)
-- [File Structure](#file-structure)
-- [Dependencies](#dependencies)
-- [Contributing](#contributing)
 
 ## Features
 
@@ -129,9 +124,7 @@ Pillow
      pip install - requirements.txt
 ```
 
-## Demo
 
-![Screencast from 2023-12-13 21-42-23](https://github.com/Gokulachalam/Covid_Detect_X/assets/89055461/f9579cce-a347-4127-919c-a7a5ff211548)
 
 
 
