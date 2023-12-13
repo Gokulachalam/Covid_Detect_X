@@ -101,6 +101,10 @@ Feel free to refer to the documentation of your chosen code hosting platform for
 - requirements.txt
 
 
+
+
+
+
 ## Dependencies
 Flask
 
@@ -117,11 +121,5 @@ Pillow
 
 ```bash
      pip install - requirements.txt
+
      ```
-
-
-                                                                    
-
-
-
-
