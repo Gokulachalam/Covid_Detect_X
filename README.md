@@ -6,6 +6,10 @@
 
 
 
+## Development Environment
+
+This project is developed and tested on a Debian 12 Linux platform
+
 
 ## Overview
 
