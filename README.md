@@ -48,7 +48,7 @@ If you haven't set up a remote repository yet and wish to keep a backup or colla
 
 1. **Create a Remote Repository:**
    - Go to a code hosting platform such as GitHub, GitLab, or Bitbucket.
-   - Create a new repository on the platform.
+   - Create a new repository
 
 2. **Get Repository URL:**
    - Copy the URL of your newly created remote repository.
